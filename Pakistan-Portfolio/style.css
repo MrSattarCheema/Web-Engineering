@@ -1,0 +1,37 @@
+body {
+    background: url('2767405.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+#container {
+    
+    width: 424px;
+    background: rgb(101, 170, 101);
+    color: white;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    background: #377dbb;
+    color: white;
+    border-radius: 5px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #377dbb;
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
+    <title>GPA Calculator</title>
+</head>
+
+<body>
+    <section class="bg-gradient-to-r from-red-500 to-indigo-700">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center">
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                GPA Calculator</h1>
+            <p class="mb-8 text-lg font-normal text-gray-900 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Choice the
+                Semester and enter GPA, Click on Calculate for Calculation of GPA.
+                <br>NOTE: THE GPA could be one or two point less than from actual GPA because of Decimal Points
+            </p>
+        </div>
+    </section>
+
+    <div class="py-3 px-8 text-center">
+        <p class="py-2">Directly Jump To:</p>
+        <a href="#2nd">
+            <button type="button"
+                class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">2nd
+                Semester</button>
+        </a>
+        <a href="#3rd">
+        <button type="button"
+            class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">3rd
+            Semester</button>
+        </a>
+        <a href="#4th">
+        <button type="button"
+            class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">4th
+            Semester</button>
+        </a>
+        <a href="#5th">
+        <button type="button"
+            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">5th
+            Semester</button>
+        </a>
+    </div>
+
+
+    <div class="overflow-x-auto relative shadow-md ">
+        <table class="w-full text-sm text-left text-gray-500 ">
+            <caption id="2nd" class="p-5 text-lg font-semibold text-left text-center text-gray-900 bg-white ">
+                2nd Semester GPA
+                <p class="mt-1 text-sm font-normal text-gray-700 ">Calculate the 2nd Semester GPA</p>
+            </caption>
+            <thead class="text-xs  uppercase  bg-gray-600 text-gray-300">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        Description
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Input
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 1st Semester GPA
+                    </th>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="2gpa1"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit GPA" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 1st Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="2ch1"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter Total CGPA
+                    </th>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="2cgpa" placeholder="Enter Total CGPA"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 2nd Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="2ch2" placeholder="2nd Semester Credit Hour"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td class="py-4 px-6 text-center">
+                        <button name="sem1" onclick="fun2()" type="button"
+                            class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+                    </td>
+                    <td class="py-4 px-6 text-center">
+                        <p class="mt-1 text-sm font-bold text-white">GPA of Semester is:
+                        <p id="1stGPA" class="mt-1 text-sm font-semibold text-red-400"></p>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="overflow-x-auto relative shadow-md ">
+        <table class="w-full text-sm text-left text-gray-500 ">
+            <caption id="3rd" class="p-5 text-lg font-semibold text-left text-center text-gray-900 bg-white ">
+                3rd Semester GPA
+                <p class="mt-1 text-sm font-normal text-gray-700 ">Calculate the 3rd Semester GPA</p>
+            </caption>
+            <thead class="text-xs  uppercase  bg-gray-600 text-gray-300">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        Description
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Input
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 1st Semester GPA
+                    </th>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="3gpa1" placeholder="Enter 1st Semester GPA"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 1st Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="3ch1"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 2nd Semester GPA
+                    </th>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="3gpa2"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="2nd Semester GPA" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 2nd Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="3ch2"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="2nd Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter Total CGPA
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="3cgpa"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="Total CGPA" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 3rd Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="3ch3"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="3rd Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td class="py-4 px-6 text-center">
+                        <button name="sem1" onclick="fun3()" type="button"
+                            class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+                    </td>
+                    <td class="py-4 px-6 text-center">
+                        <p class="mt-1 text-sm font-bold text-white">GPA of Semester is:
+                        <p id="3rdGPA" class="mt-1 text-sm font-semibold text-red-400"></p>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="overflow-x-auto relative shadow-md ">
+        <table class="w-full text-sm text-left text-gray-500 ">
+            <caption id="4th" class="p-5 text-lg font-semibold text-left text-center text-gray-900 bg-white ">
+                4th Semester GPA
+                <p class="mt-1 text-sm font-normal text-gray-700 ">Calculate the 4th Semester GPA</p>
+            </caption>
+            <thead class="text-xs  uppercase  bg-gray-600 text-gray-300">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        Description
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Input
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 1st Semester GPA
+                    </th>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="4gpa1" placeholder="Enter 1st Semester GPA"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 1st Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="4ch1"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 2nd Semester GPA
+                    </th>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="4gpa2"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="2nd Semester GPA" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 2nd Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="4ch2"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="2nd Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 3rd Semester GPA
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="4gpa3"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="3rd Semester GPA" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 3rd Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="4ch3"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="3rd Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter Total CGPA
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="4cgpa"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="Total CGPA" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 4th Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="4ch4"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="4th Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td class="py-4 px-6 text-center">
+                        <button name="sem1" onclick="fun4()" type="button"
+                            class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+                    </td>
+                    <td class="py-4 px-6 text-center">
+                        <p class="mt-1 text-sm font-bold text-white">GPA of Semester is:
+                        <p id="4thGPA" class="mt-1 text-sm font-semibold text-red-400"></p>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="overflow-x-auto relative shadow-md ">
+        <table class="w-full text-sm text-left text-gray-500 ">
+            <caption id="5th" class="p-5 text-lg font-semibold text-left text-center text-gray-900 bg-white ">
+                5th Semester GPA
+                <p class="mt-1 text-sm font-normal text-gray-700 ">Calculate the 5th Semester GPA</p>
+            </caption>
+            <thead class="text-xs  uppercase  bg-gray-600 text-gray-300">
+                <tr>
+                    <th scope="col" class="py-3 px-6">
+                        Description
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                        Input
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 1st Semester GPA
+                    </th>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="5gpa1" placeholder="Enter 1st Semester GPA"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 1st Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="5ch1"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="1st Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 2nd Semester GPA
+                    </th>
+                    <td class="py-4 px-6">
+                        <input name="sem1" type="number" id="5gpa2"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="2nd Semester GPA" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 2nd Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="5ch2"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="2nd Semester Credit Hour" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 3rd Semester GPA
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="5gpa3"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="3rd Semester GPA" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 3rd Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="5ch3"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="3rd Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 4th Semester GPA
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="5gpa4"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="4th Semester GPA" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 4th Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="5ch4"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="4th Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter Total CGPA
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="5cgpa"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="Total CGPA" required>
+                    </td>
+
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap text-white">
+                        Enter 5th Semester Credit Hour
+                    </td>
+                    <td class="py-4 px-6 ">
+                        <input name="sem1" type="number" id="5ch5"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            placeholder="5th Semester Credit Hour" required>
+                    </td>
+                </tr>
+                <tr class=" border-b bg-gray-800 border-gray-700">
+                    <td class="py-4 px-6 text-center">
+                        <button name="sem1" onclick="fun5()" type="button"
+                            class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Calculate</button>
+                    </td>
+                    <td class="py-4 px-6 text-center">
+                        <p class="mt-1 text-sm font-bold text-white">GPA of Semester is:
+                        <p id="5thGPA" class="mt-1 text-sm font-semibold text-red-400"></p>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bg-gray-300">
+        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="images/logo.png" alt="" class="h-12" />
+            <span class="ml-3 text-xl">Developed BY:</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+            © 2020-24 GCS — BSIT
+            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+              target="_blank">@MrSattarCheema</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500 cursor-pointer" href="http://www.facebook.com/MrSattarCheema" target="_blank">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 cursor-pointer" href="http://www.twitter.com/MrSattarCheema" target="_blank">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                </path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 cursor-pointer" href="http://instagram.com/MrSattarCheema" target="_blank">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500 cursor-pointer" href="https://www.linkedin.com/in/SattarCheema" target="_blank">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>
